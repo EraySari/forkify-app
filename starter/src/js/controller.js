@@ -121,6 +121,9 @@ const controlAddRecipe = async function (data) {
     addRecipeView.renderError(err.message);
   }
 };
+const newFeatures = function () {
+  console.log('Welcome');
+};
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
   recipeView.renderMessage();
@@ -133,7 +136,7 @@ const init = function () {
 
   addRecipeView.addHandlerUpload(controlAddRecipe);
 
-  //;
+  newFeatures();
 };
 init(); // olayi controllerde tutuyoruz cunku islendigi yer burasi(controlRecipes)
 
